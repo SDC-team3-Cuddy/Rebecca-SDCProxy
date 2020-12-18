@@ -1,20 +1,20 @@
 const { Router } = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 const {
-  service1, service2, service3, service4,
+  /*service1,*/ service2, /*service3, service4,*/
 } = require('../config/services.js');
 
 const router = Router();
 const cors = require('cors');
 
-router.use('/service1.js', createProxyMiddleware({
+/*router.use('/service1.js', createProxyMiddleware({
   target: service1.url,
   pathRewrite: {
     '^/bundles/service1.js': service1.bundle,
   },
   changeOrigin: true,
 }));
-
+*/
 router.use('/service2.js', createProxyMiddleware({
   target: service2.url,
   pathRewrite: {
@@ -22,7 +22,7 @@ router.use('/service2.js', createProxyMiddleware({
   },
   changeOrigin: true,
 }));
-
+/*
 router.use('/service3.js', createProxyMiddleware({
   target: service3.url,
   pathRewrite: {
@@ -38,5 +38,5 @@ router.use('/service4.js', createProxyMiddleware({
   },
   changeOrigin: true,
 }));
-
+*/
 module.exports = router;

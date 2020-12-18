@@ -1,1 +1,5 @@
 node_modules
+guitarcentaur.yml
+newrelic.js
+SDC.pem
+newrelic_agent.log

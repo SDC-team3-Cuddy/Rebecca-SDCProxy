@@ -41,17 +41,17 @@
 */
 
 module.exports = {
-  service1: {
+  /*service1: {
     api: ['/items/', '/photos'],
     url: 'http://localhost:3001',
     bundle: 'bundle.js',
-  },
+  }, */
   service2: {
     api: ['/values', '/styles'],
     url: 'http://localhost:3002',
     bundle: 'bundle.js',
   },
-  service3: {
+  /*service3: {
     api: ['/related','/getrelatedpurchases', '/getdetails', '/getratingavg', '/getratingcount', '/related/getrelatedpurchases', '/related/getdetails'],
     url: 'http://localhost:3003',
     bundle: 'bundle.js'
@@ -60,5 +60,5 @@ module.exports = {
     api:  ['/:endpoint', '/guitar/reviews'],
     url: 'http://localhost:3004',
     bundle: 'bundle.js',
-  },
+  },*/
 };
